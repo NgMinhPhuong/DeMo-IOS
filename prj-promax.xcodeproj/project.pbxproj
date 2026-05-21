@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		22B8C6562FB8710E0090D286 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 22B8C6552FB8710E0090D286 /* RealmSwift */; };
 		22B8C6572FB8710E0090D286 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 22B8C6552FB8710E0090D286 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		22C9ED7A2FBEC0A40061737E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C9ED792FBEC0A30061737E /* Assets.xcassets */; };
 		22DB7BF02FB6C477005697DF /* prj_promaxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7BEF2FB6C477005697DF /* prj_promaxApp.swift */; };
 		22DB7BF22FB6C477005697DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7BF12FB6C477005697DF /* ContentView.swift */; };
 		22DB7BF42FB6C47A005697DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DB7BF32FB6C47A005697DF /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		22070C042FBDC32600020D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		22C9ED792FBEC0A30061737E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "prj-promax/Assets.xcassets"; sourceTree = "<group>"; };
 		22DB7BEC2FB6C477005697DF /* prj-promax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "prj-promax.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DB7BEF2FB6C477005697DF /* prj_promaxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prj_promaxApp.swift; sourceTree = "<group>"; };
 		22DB7BF12FB6C477005697DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		22DB7BE32FB6C477005697DF = {
 			isa = PBXGroup;
 			children = (
+				22C9ED792FBEC0A30061737E /* Assets.xcassets */,
 				22DB7BEE2FB6C477005697DF /* prj-promax */,
 				22DB7BFF2FB6C47A005697DF /* prj-promaxTests */,
 				22DB7C092FB6C47A005697DF /* prj-promaxUITests */,
@@ -450,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22DB7BF72FB6C47A005697DF /* Preview Assets.xcassets in Resources */,
+				22C9ED7A2FBEC0A40061737E /* Assets.xcassets in Resources */,
 				22DB7BF42FB6C47A005697DF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,6 +4,7 @@ struct CustomImageView: View {
     let url: String
     let width: CGFloat
     let height: CGFloat
+    var maxWidth: CGFloat? = nil
 
     var body: some View {
         if let imageURL = URL(string: url) {
@@ -17,6 +18,7 @@ struct CustomImageView: View {
                         .resizable()
                         .scaledToFill()
                         .frame(width: width, height: height)
+                        .frame(maxWidth: maxWidth)
                         .clipped()
                 case .failure:
                     Image(systemName: "photo")

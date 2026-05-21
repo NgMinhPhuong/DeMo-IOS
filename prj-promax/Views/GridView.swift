@@ -6,8 +6,8 @@ struct GridView: View {
     @State private var gridNavPath = NavigationPath()
 
     private let columns: [GridItem] = [
-        GridItem(.flexible(), spacing: 12),
-        GridItem(.flexible(), spacing: 12),
+        GridItem(.flexible()),
+        GridItem(.flexible()),
     ]
 
     var body: some View {
@@ -26,9 +26,10 @@ struct GridView: View {
                                 GridCell(item: item)
                             }
                             .buttonStyle(.plain)
+
                         }
                     }
-                    .padding(12)
+                    .padding(8)
                 }
             }
             .navigationTitle("Grid")
@@ -60,8 +61,7 @@ struct GridCell: View {
 
     var body: some View {
         VStack(spacing: 8) {
-            CustomImageView(url: item.imageUrl, width: .infinity, height: 120)
-                .cornerRadius(8)
+            CustomImageView(url: item.imageUrl, width: 100, height: 100, maxWidth: .infinity)
 
             VStack(alignment: .leading, spacing: 4) {
                 Text(item.name)
@@ -74,9 +74,9 @@ struct GridCell: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal, 4)
         }
-        .padding(8)
+        .padding(4)
         .background(Color(.systemGray6))
-        .cornerRadius(12)
+        .cornerRadius(10)
     }
 }
 
