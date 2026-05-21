@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22B8C6562FB8710E0090D286 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 22B8C6552FB8710E0090D286 /* RealmSwift */; };
+		22B8C6572FB8710E0090D286 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 22B8C6552FB8710E0090D286 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		22DB7BF02FB6C477005697DF /* prj_promaxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7BEF2FB6C477005697DF /* prj_promaxApp.swift */; };
+		22DB7BF22FB6C477005697DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7BF12FB6C477005697DF /* ContentView.swift */; };
+		22DB7BF42FB6C47A005697DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DB7BF32FB6C47A005697DF /* Assets.xcassets */; };
+		22DB7BF72FB6C47A005697DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DB7BF62FB6C47A005697DF /* Preview Assets.xcassets */; };
+		22DB7C012FB6C47A005697DF /* prj_promaxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C002FB6C47A005697DF /* prj_promaxTests.swift */; };
+		22DB7C0B2FB6C47A005697DF /* prj_promaxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C0A2FB6C47A005697DF /* prj_promaxUITests.swift */; };
+		22DB7C0D2FB6C47A005697DF /* prj_promaxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C0C2FB6C47A005697DF /* prj_promaxUITestsLaunchTests.swift */; };
+		22DB7C252FB6C47A005697DF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C242FB6C47A005697DF /* APIService.swift */; };
+		22DB7C272FB6C47A005697DF /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C262FB6C47A005697DF /* ItemViewModel.swift */; };
+		22DB7C292FB6C47A005697DF /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C282FB6C47A005697DF /* SettingsViewModel.swift */; };
+		22DB7C2B2FB6C47A005697DF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C2A2FB6C47A005697DF /* HomeView.swift */; };
+		22DB7C2D2FB6C47A005697DF /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C2C2FB6C47A005697DF /* ItemListView.swift */; };
+		22DB7C2F2FB6C47A005697DF /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C2E2FB6C47A005697DF /* ItemDetailView.swift */; };
+		22DB7C312FB6C47A005697DF /* AddEditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C302FB6C47A005697DF /* AddEditItemView.swift */; };
+		22DB7C332FB6C47A005697DF /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C322FB6C47A005697DF /* GridView.swift */; };
+		22DB7C352FB6C47A005697DF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C342FB6C47A005697DF /* SettingsView.swift */; };
+		22DB7C372FB6C47A005697DF /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C362FB6C47A005697DF /* CustomImageView.swift */; };
+		22DB7C392FB6C47A005697DF /* ItemDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C382FB6C47A005697DF /* ItemDomain.swift */; };
+		22DB7C3B2FB6C47A005697DF /* RealmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C3A2FB6C47A005697DF /* RealmItem.swift */; };
+		22DB7C3D2FB6C47A005697DF /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C3C2FB6C47A005697DF /* RealmService.swift */; };
+		22DB7C3F2FB6C47A005697DF /* ItemRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C3E2FB6C47A005697DF /* ItemRepositoryProtocol.swift */; };
+		22DB7C412FB6C47A005697DF /* ItemRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C402FB6C47A005697DF /* ItemRepositoryImpl.swift */; };
+		22DB7C432FB6C47A005697DF /* ItemUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C422FB6C47A005697DF /* ItemUseCase.swift */; };
+		22DB7C452FB6C47A005697DF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C442FB6C47A005697DF /* AppCoordinator.swift */; };
+		22DB7C512FB6C47A005697DF /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C502FB6C47A005697DF /* FileManagerService.swift */; };
+		22DB7C532FB6C47A005697DF /* LocalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C522FB6C47A005697DF /* LocalDataService.swift */; };
+		22DB7C562FB6C47A005697DF /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C552FB6C47A005697DF /* UserProfile.swift */; };
+		22DB7C582FB6C47A005697DF /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C572FB6C47A005697DF /* FavoritesViewModel.swift */; };
+		22DB7C5A2FB6C47A005697DF /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C592FB6C47A005697DF /* SectionHeaderView.swift */; };
+		22DB7C5C2FB6C47A005697DF /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C5B2FB6C47A005697DF /* ActionButton.swift */; };
+		22DB7C5E2FB6C47A005697DF /* PriceText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C5D2FB6C47A005697DF /* PriceText.swift */; };
+		22DB7C602FB6C47A005697DF /* LoadingOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C5F2FB6C47A005697DF /* LoadingOverlayView.swift */; };
+		22DB7C622FB6C47A005697DF /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C612FB6C47A005697DF /* BadgeView.swift */; };
+		22DB7C642FB6C47A005697DF /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C632FB6C47A005697DF /* EmptyStateView.swift */; };
+		22DB7C662FB6C47A005697DF /* RoundedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C652FB6C47A005697DF /* RoundedCardView.swift */; };
+		22DB7C682FB6C47A005697DF /* InfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C672FB6C47A005697DF /* InfoRowView.swift */; };
+		22DB7C6A2FB6C47A005697DF /* StatCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C692FB6C47A005697DF /* StatCardView.swift */; };
+		22DB7C6C2FB6C47A005697DF /* ProfileAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C6B2FB6C47A005697DF /* ProfileAvatarView.swift */; };
+		22DB7C6E2FB6C47A005697DF /* ComponentsGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DB7C6D2FB6C47A005697DF /* ComponentsGalleryView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22DB7BFD2FB6C47A005697DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22DB7BE42FB6C477005697DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22DB7BEB2FB6C477005697DF;
+			remoteInfo = "prj-promax";
+		};
+		22DB7C072FB6C47A005697DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22DB7BE42FB6C477005697DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22DB7BEB2FB6C477005697DF;
+			remoteInfo = "prj-promax";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22DB7C1E2FB6CEF9005697DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				22B8C6572FB8710E0090D286 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		22070C042FBDC32600020D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		22DB7BEC2FB6C477005697DF /* prj-promax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "prj-promax.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DB7BEF2FB6C477005697DF /* prj_promaxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prj_promaxApp.swift; sourceTree = "<group>"; };
+		22DB7BF12FB6C477005697DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		22DB7BF32FB6C47A005697DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22DB7BF62FB6C47A005697DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22DB7BFC2FB6C47A005697DF /* prj-promaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "prj-promaxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DB7C002FB6C47A005697DF /* prj_promaxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prj_promaxTests.swift; sourceTree = "<group>"; };
+		22DB7C062FB6C47A005697DF /* prj-promaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "prj-promaxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DB7C0A2FB6C47A005697DF /* prj_promaxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prj_promaxUITests.swift; sourceTree = "<group>"; };
+		22DB7C0C2FB6C47A005697DF /* prj_promaxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prj_promaxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		22DB7C242FB6C47A005697DF /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		22DB7C262FB6C47A005697DF /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		22DB7C282FB6C47A005697DF /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		22DB7C2A2FB6C47A005697DF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		22DB7C2C2FB6C47A005697DF /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		22DB7C2E2FB6C47A005697DF /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		22DB7C302FB6C47A005697DF /* AddEditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditItemView.swift; sourceTree = "<group>"; };
+		22DB7C322FB6C47A005697DF /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		22DB7C342FB6C47A005697DF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		22DB7C362FB6C47A005697DF /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		22DB7C382FB6C47A005697DF /* ItemDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDomain.swift; sourceTree = "<group>"; };
+		22DB7C3A2FB6C47A005697DF /* RealmItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmItem.swift; sourceTree = "<group>"; };
+		22DB7C3C2FB6C47A005697DF /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		22DB7C3E2FB6C47A005697DF /* ItemRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepositoryProtocol.swift; sourceTree = "<group>"; };
+		22DB7C402FB6C47A005697DF /* ItemRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRepositoryImpl.swift; sourceTree = "<group>"; };
+		22DB7C422FB6C47A005697DF /* ItemUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemUseCase.swift; sourceTree = "<group>"; };
+		22DB7C442FB6C47A005697DF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		22DB7C502FB6C47A005697DF /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
+		22DB7C522FB6C47A005697DF /* LocalDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataService.swift; sourceTree = "<group>"; };
+		22DB7C552FB6C47A005697DF /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		22DB7C572FB6C47A005697DF /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		22DB7C592FB6C47A005697DF /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		22DB7C5B2FB6C47A005697DF /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		22DB7C5D2FB6C47A005697DF /* PriceText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceText.swift; sourceTree = "<group>"; };
+		22DB7C5F2FB6C47A005697DF /* LoadingOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlayView.swift; sourceTree = "<group>"; };
+		22DB7C612FB6C47A005697DF /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
+		22DB7C632FB6C47A005697DF /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		22DB7C652FB6C47A005697DF /* RoundedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCardView.swift; sourceTree = "<group>"; };
+		22DB7C672FB6C47A005697DF /* InfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRowView.swift; sourceTree = "<group>"; };
+		22DB7C692FB6C47A005697DF /* StatCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCardView.swift; sourceTree = "<group>"; };
+		22DB7C6B2FB6C47A005697DF /* ProfileAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAvatarView.swift; sourceTree = "<group>"; };
+		22DB7C6D2FB6C47A005697DF /* ComponentsGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsGalleryView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22DB7BE92FB6C477005697DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B8C6562FB8710E0090D286 /* RealmSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DB7BF92FB6C47A005697DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DB7C032FB6C47A005697DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22DB7BE32FB6C477005697DF = {
+			isa = PBXGroup;
+			children = (
+				22DB7BEE2FB6C477005697DF /* prj-promax */,
+				22DB7BFF2FB6C47A005697DF /* prj-promaxTests */,
+				22DB7C092FB6C47A005697DF /* prj-promaxUITests */,
+				22DB7BED2FB6C477005697DF /* Products */,
+				22DB7C1A2FB6CEF9005697DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22DB7BED2FB6C477005697DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7BEC2FB6C477005697DF /* prj-promax.app */,
+				22DB7BFC2FB6C47A005697DF /* prj-promaxTests.xctest */,
+				22DB7C062FB6C47A005697DF /* prj-promaxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22DB7BEE2FB6C477005697DF /* prj-promax */ = {
+			isa = PBXGroup;
+			children = (
+				22070C042FBDC32600020D21 /* Info.plist */,
+				22DB7BEF2FB6C477005697DF /* prj_promaxApp.swift */,
+				22DB7BF12FB6C477005697DF /* ContentView.swift */,
+				22DB7C462FB6C47A005697DF /* Models */,
+				22DB7C472FB6C47A005697DF /* Data */,
+				22DB7C4A2FB6C47A005697DF /* Domain */,
+				22DB7C4C2FB6C47A005697DF /* Coordinators */,
+				22DB7C4D2FB6C47A005697DF /* Services */,
+				22DB7C4E2FB6C47A005697DF /* ViewModels */,
+				22DB7C4F2FB6C47A005697DF /* Views */,
+				22DB7BF52FB6C47A005697DF /* Preview Content */,
+			);
+			path = "prj-promax";
+			sourceTree = "<group>";
+		};
+		22DB7BF52FB6C47A005697DF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7BF62FB6C47A005697DF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22DB7BFF2FB6C47A005697DF /* prj-promaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C002FB6C47A005697DF /* prj_promaxTests.swift */,
+			);
+			path = "prj-promaxTests";
+			sourceTree = "<group>";
+		};
+		22DB7C092FB6C47A005697DF /* prj-promaxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C0A2FB6C47A005697DF /* prj_promaxUITests.swift */,
+				22DB7BF32FB6C47A005697DF /* Assets.xcassets */,
+				22DB7C0C2FB6C47A005697DF /* prj_promaxUITestsLaunchTests.swift */,
+			);
+			path = "prj-promaxUITests";
+			sourceTree = "<group>";
+		};
+		22DB7C1A2FB6CEF9005697DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22DB7C462FB6C47A005697DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C382FB6C47A005697DF /* ItemDomain.swift */,
+				22DB7C552FB6C47A005697DF /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22DB7C472FB6C47A005697DF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C482FB6C47A005697DF /* Realm */,
+				22DB7C492FB6C47A005697DF /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		22DB7C482FB6C47A005697DF /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C3A2FB6C47A005697DF /* RealmItem.swift */,
+				22DB7C3C2FB6C47A005697DF /* RealmService.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		22DB7C492FB6C47A005697DF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C3E2FB6C47A005697DF /* ItemRepositoryProtocol.swift */,
+				22DB7C402FB6C47A005697DF /* ItemRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		22DB7C4A2FB6C47A005697DF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C4B2FB6C47A005697DF /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		22DB7C4B2FB6C47A005697DF /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C422FB6C47A005697DF /* ItemUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		22DB7C4C2FB6C47A005697DF /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C442FB6C47A005697DF /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		22DB7C4D2FB6C47A005697DF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C242FB6C47A005697DF /* APIService.swift */,
+				22DB7C502FB6C47A005697DF /* FileManagerService.swift */,
+				22DB7C522FB6C47A005697DF /* LocalDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		22DB7C4E2FB6C47A005697DF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C262FB6C47A005697DF /* ItemViewModel.swift */,
+				22DB7C282FB6C47A005697DF /* SettingsViewModel.swift */,
+				22DB7C572FB6C47A005697DF /* FavoritesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		22DB7C4F2FB6C47A005697DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C2A2FB6C47A005697DF /* HomeView.swift */,
+				22DB7C2C2FB6C47A005697DF /* ItemListView.swift */,
+				22DB7C2E2FB6C47A005697DF /* ItemDetailView.swift */,
+				22DB7C302FB6C47A005697DF /* AddEditItemView.swift */,
+				22DB7C322FB6C47A005697DF /* GridView.swift */,
+				22DB7C342FB6C47A005697DF /* SettingsView.swift */,
+				22DB7C362FB6C47A005697DF /* CustomImageView.swift */,
+				22DB7C542FB6C47A005697DF /* Components */,
+				22DB7C6D2FB6C47A005697DF /* ComponentsGalleryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22DB7C542FB6C47A005697DF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				22DB7C592FB6C47A005697DF /* SectionHeaderView.swift */,
+				22DB7C5B2FB6C47A005697DF /* ActionButton.swift */,
+				22DB7C5D2FB6C47A005697DF /* PriceText.swift */,
+				22DB7C5F2FB6C47A005697DF /* LoadingOverlayView.swift */,
+				22DB7C612FB6C47A005697DF /* BadgeView.swift */,
+				22DB7C632FB6C47A005697DF /* EmptyStateView.swift */,
+				22DB7C652FB6C47A005697DF /* RoundedCardView.swift */,
+				22DB7C672FB6C47A005697DF /* InfoRowView.swift */,
+				22DB7C692FB6C47A005697DF /* StatCardView.swift */,
+				22DB7C6B2FB6C47A005697DF /* ProfileAvatarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22DB7BEB2FB6C477005697DF /* prj-promax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22DB7C102FB6C47A005697DF /* Build configuration list for PBXNativeTarget "prj-promax" */;
+			buildPhases = (
+				22DB7BE82FB6C477005697DF /* Sources */,
+				22DB7BE92FB6C477005697DF /* Frameworks */,
+				22DB7BEA2FB6C477005697DF /* Resources */,
+				22DB7C1E2FB6CEF9005697DF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "prj-promax";
+			packageProductDependencies = (
+				22B8C6552FB8710E0090D286 /* RealmSwift */,
+			);
+			productName = "prj-promax";
+			productReference = 22DB7BEC2FB6C477005697DF /* prj-promax.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22DB7BFB2FB6C47A005697DF /* prj-promaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22DB7C132FB6C47A005697DF /* Build configuration list for PBXNativeTarget "prj-promaxTests" */;
+			buildPhases = (
+				22DB7BF82FB6C47A005697DF /* Sources */,
+				22DB7BF92FB6C47A005697DF /* Frameworks */,
+				22DB7BFA2FB6C47A005697DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22DB7BFE2FB6C47A005697DF /* PBXTargetDependency */,
+			);
+			name = "prj-promaxTests";
+			productName = "prj-promaxTests";
+			productReference = 22DB7BFC2FB6C47A005697DF /* prj-promaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22DB7C052FB6C47A005697DF /* prj-promaxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22DB7C162FB6C47A005697DF /* Build configuration list for PBXNativeTarget "prj-promaxUITests" */;
+			buildPhases = (
+				22DB7C022FB6C47A005697DF /* Sources */,
+				22DB7C032FB6C47A005697DF /* Frameworks */,
+				22DB7C042FB6C47A005697DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22DB7C082FB6C47A005697DF /* PBXTargetDependency */,
+			);
+			name = "prj-promaxUITests";
+			productName = "prj-promaxUITests";
+			productReference = 22DB7C062FB6C47A005697DF /* prj-promaxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22DB7BE42FB6C477005697DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					22DB7BEB2FB6C477005697DF = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					22DB7BFB2FB6C47A005697DF = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 22DB7BEB2FB6C477005697DF;
+					};
+					22DB7C052FB6C47A005697DF = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 22DB7BEB2FB6C477005697DF;
+					};
+				};
+			};
+			buildConfigurationList = 22DB7BE72FB6C477005697DF /* Build configuration list for PBXProject "prj-promax" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22DB7BE32FB6C477005697DF;
+			packageReferences = (
+				22DB7C192FB6CED5005697DF /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 22DB7BED2FB6C477005697DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22DB7BEB2FB6C477005697DF /* prj-promax */,
+				22DB7BFB2FB6C47A005697DF /* prj-promaxTests */,
+				22DB7C052FB6C47A005697DF /* prj-promaxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22DB7BEA2FB6C477005697DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DB7BF72FB6C47A005697DF /* Preview Assets.xcassets in Resources */,
+				22DB7BF42FB6C47A005697DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DB7BFA2FB6C47A005697DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DB7C042FB6C47A005697DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22DB7BE82FB6C477005697DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DB7BF22FB6C477005697DF /* ContentView.swift in Sources */,
+				22DB7BF02FB6C477005697DF /* prj_promaxApp.swift in Sources */,
+				22DB7C252FB6C47A005697DF /* APIService.swift in Sources */,
+				22DB7C272FB6C47A005697DF /* ItemViewModel.swift in Sources */,
+				22DB7C292FB6C47A005697DF /* SettingsViewModel.swift in Sources */,
+				22DB7C2B2FB6C47A005697DF /* HomeView.swift in Sources */,
+				22DB7C2D2FB6C47A005697DF /* ItemListView.swift in Sources */,
+				22DB7C2F2FB6C47A005697DF /* ItemDetailView.swift in Sources */,
+				22DB7C312FB6C47A005697DF /* AddEditItemView.swift in Sources */,
+				22DB7C332FB6C47A005697DF /* GridView.swift in Sources */,
+				22DB7C352FB6C47A005697DF /* SettingsView.swift in Sources */,
+				22DB7C372FB6C47A005697DF /* CustomImageView.swift in Sources */,
+				22DB7C392FB6C47A005697DF /* ItemDomain.swift in Sources */,
+				22DB7C3B2FB6C47A005697DF /* RealmItem.swift in Sources */,
+				22DB7C3D2FB6C47A005697DF /* RealmService.swift in Sources */,
+				22DB7C3F2FB6C47A005697DF /* ItemRepositoryProtocol.swift in Sources */,
+				22DB7C412FB6C47A005697DF /* ItemRepositoryImpl.swift in Sources */,
+				22DB7C432FB6C47A005697DF /* ItemUseCase.swift in Sources */,
+				22DB7C512FB6C47A005697DF /* FileManagerService.swift in Sources */,
+				22DB7C532FB6C47A005697DF /* LocalDataService.swift in Sources */,
+				22DB7C562FB6C47A005697DF /* UserProfile.swift in Sources */,
+				22DB7C582FB6C47A005697DF /* FavoritesViewModel.swift in Sources */,
+				22DB7C5A2FB6C47A005697DF /* SectionHeaderView.swift in Sources */,
+				22DB7C5C2FB6C47A005697DF /* ActionButton.swift in Sources */,
+				22DB7C5E2FB6C47A005697DF /* PriceText.swift in Sources */,
+				22DB7C602FB6C47A005697DF /* LoadingOverlayView.swift in Sources */,
+				22DB7C622FB6C47A005697DF /* BadgeView.swift in Sources */,
+				22DB7C642FB6C47A005697DF /* EmptyStateView.swift in Sources */,
+				22DB7C662FB6C47A005697DF /* RoundedCardView.swift in Sources */,
+				22DB7C452FB6C47A005697DF /* AppCoordinator.swift in Sources */,
+				22DB7C682FB6C47A005697DF /* InfoRowView.swift in Sources */,
+				22DB7C6A2FB6C47A005697DF /* StatCardView.swift in Sources */,
+				22DB7C6C2FB6C47A005697DF /* ProfileAvatarView.swift in Sources */,
+				22DB7C6E2FB6C47A005697DF /* ComponentsGalleryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DB7BF82FB6C47A005697DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DB7C012FB6C47A005697DF /* prj_promaxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DB7C022FB6C47A005697DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DB7C0D2FB6C47A005697DF /* prj_promaxUITestsLaunchTests.swift in Sources */,
+				22DB7C0B2FB6C47A005697DF /* prj_promaxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22DB7BFE2FB6C47A005697DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22DB7BEB2FB6C477005697DF /* prj-promax */;
+			targetProxy = 22DB7BFD2FB6C47A005697DF /* PBXContainerItemProxy */;
+		};
+		22DB7C082FB6C47A005697DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22DB7BEB2FB6C477005697DF /* prj-promax */;
+			targetProxy = 22DB7C072FB6C47A005697DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22DB7C0E2FB6C47A005697DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22DB7C0F2FB6C47A005697DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22DB7C112FB6C47A005697DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"prj-promax/Preview Content\"";
+				DEVELOPMENT_TEAM = 36PWX35G64;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "prj-promax/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "allexceed.prj-promax";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22DB7C122FB6C47A005697DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"prj-promax/Preview Content\"";
+				DEVELOPMENT_TEAM = 36PWX35G64;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "prj-promax/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "allexceed.prj-promax";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22DB7C142FB6C47A005697DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36PWX35G64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "allexceed.prj-promaxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/prj-promax.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/prj-promax";
+			};
+			name = Debug;
+		};
+		22DB7C152FB6C47A005697DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36PWX35G64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "allexceed.prj-promaxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/prj-promax.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/prj-promax";
+			};
+			name = Release;
+		};
+		22DB7C172FB6C47A005697DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36PWX35G64;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "allexceed.prj-promaxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "prj-promax";
+			};
+			name = Debug;
+		};
+		22DB7C182FB6C47A005697DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 36PWX35G64;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "allexceed.prj-promaxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "prj-promax";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22DB7BE72FB6C477005697DF /* Build configuration list for PBXProject "prj-promax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DB7C0E2FB6C47A005697DF /* Debug */,
+				22DB7C0F2FB6C47A005697DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22DB7C102FB6C47A005697DF /* Build configuration list for PBXNativeTarget "prj-promax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DB7C112FB6C47A005697DF /* Debug */,
+				22DB7C122FB6C47A005697DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22DB7C132FB6C47A005697DF /* Build configuration list for PBXNativeTarget "prj-promaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DB7C142FB6C47A005697DF /* Debug */,
+				22DB7C152FB6C47A005697DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22DB7C162FB6C47A005697DF /* Build configuration list for PBXNativeTarget "prj-promaxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DB7C172FB6C47A005697DF /* Debug */,
+				22DB7C182FB6C47A005697DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22DB7C192FB6CED5005697DF /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = community;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22B8C6552FB8710E0090D286 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22DB7C192FB6CED5005697DF /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 22DB7BE42FB6C477005697DF /* Project object */;
+}
