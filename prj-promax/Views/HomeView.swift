@@ -31,8 +31,10 @@ struct HomeView: View {
                         Button("Sheet") { showSheet = true }
                             .buttonStyle(.borderedProminent)
                         Button("Alert") { showAlert = true }
+                            
                             .buttonStyle(.bordered)
                         Button("Confirm") { showConfirmation = true }
+                       
                             .buttonStyle(.bordered)
                     }
 

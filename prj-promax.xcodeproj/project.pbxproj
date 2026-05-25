@@ -80,6 +80,16 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22F0F8D92FC03B530094D88A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -372,6 +382,7 @@
 				22DB7BF82FB6C47A005697DF /* Sources */,
 				22DB7BF92FB6C47A005697DF /* Frameworks */,
 				22DB7BFA2FB6C47A005697DF /* Resources */,
+				22F0F8D92FC03B530094D88A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -379,6 +390,8 @@
 				22DB7BFE2FB6C47A005697DF /* PBXTargetDependency */,
 			);
 			name = "prj-promaxTests";
+			packageProductDependencies = (
+			);
 			productName = "prj-promaxTests";
 			productReference = 22DB7BFC2FB6C47A005697DF /* prj-promaxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";

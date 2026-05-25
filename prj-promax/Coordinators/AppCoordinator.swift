@@ -27,7 +27,7 @@ final class AppCoordinator: ObservableObject {
             }
         }
     }
-
+ 
     func handleDeepLink(_ url: URL) {
         guard url.scheme == "prjpromax" else { return }
         switch url.host {
