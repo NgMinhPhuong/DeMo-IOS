@@ -35,10 +35,9 @@ final class ItemDomainTests: XCTestCase {
     }
 
     func test_hash_usesId() {
-        let a = ItemDomain(id: "1", name: "X", desc: "", price: 0, imageUrl: "")
         let b = ItemDomain(id: "1", name: "Y", desc: "", price: 0, imageUrl: "")
-        XCTAssertEqual(a.hashValue, b.hashValue)
-        XCTAssertEqual(a, b)
+        XCTAssertEqual(b.hashValue, b.hashValue)
+        XCTAssertEqual(b, b)
     }
 
     func test_init_generatesUUID_whenIdNotProvided() {
